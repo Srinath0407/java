@@ -1,0 +1,18 @@
+public class Pattern1 {
+    public static void main(String[] args) {
+        int rows = 4; // Number of rows in the pattern
+
+        // Loop through each row
+        for (int i = 1; i <= rows; i++) {
+            int number = i * i; // Square of the row number i
+
+            // Print each square number in the row
+            for (int j = 1; j <= i; j++) {
+                System.out.print(number + "\t");
+                number += 2 * i - 1; // Calculate the next square number
+            }
+
+            System.out.println(); // Move to the next line after each row
+        }
+    }
+}
