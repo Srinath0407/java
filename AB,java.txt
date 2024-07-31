@@ -1,0 +1,40 @@
+class A
+{
+	int a,area;
+	void get(int r )
+	{
+		a=r;
+		
+	}
+	void cal()
+	{
+		area=3.14*r*r;
+		System.out.println("Area of circle : "+area);
+	}
+}
+class B extends A
+{
+	int r,h,volume;
+	void get1(int z ,int y)
+	{
+		r=z;
+                h=y
+	}
+	void cal1()
+	{
+		volume=3.14*r*r*h;
+		System.out.println("Volume of cylinder : "+volume);	
+	}
+}
+class AB
+{
+	public static void main(String arg[])	
+	{
+		
+		B obj=new B();
+		obj.get(2);
+		obj.cal();
+		obj.get1(2,3);
+		obj.cal1();
+	}
+}
